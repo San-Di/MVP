@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="PetItemTableViewCell" customModule="MVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opW-sU-ATt">
+                        <rect key="frame" x="16" y="2" width="356" height="164"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnJ-oS-WiV" customClass="CardView" customModule="MVP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="164"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitty" translatesAutoresizingMaskIntoConstraints="NO" id="uUV-5u-ddM">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="164"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="uUV-5u-ddM" secondAttribute="bottom" id="3I3-2w-tLx"/>
+                                    <constraint firstItem="uUV-5u-ddM" firstAttribute="leading" secondItem="xnJ-oS-WiV" secondAttribute="leading" id="6vp-I2-Tok"/>
+                                    <constraint firstAttribute="width" constant="140" id="79f-sY-KRI"/>
+                                    <constraint firstItem="uUV-5u-ddM" firstAttribute="top" secondItem="xnJ-oS-WiV" secondAttribute="top" id="DmQ-vL-b7C"/>
+                                    <constraint firstAttribute="trailing" secondItem="uUV-5u-ddM" secondAttribute="trailing" id="mVz-MM-ujK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidt">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xK-8t-GUs">
+                                <rect key="frame" x="140" y="12" width="216" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abyssian Cat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K14-1k-APc">
+                                        <rect key="frame" x="16" y="47.5" width="84" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 years old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI5-eq-sEw">
+                                        <rect key="frame" x="16" y="72.5" width="62" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygg-bZ-0Tr">
+                                        <rect key="frame" x="16" y="16" width="49.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance 3.6 kilometers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHE-wZ-Ajv">
+                                        <rect key="frame" x="16" y="95" width="151.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QI5-eq-sEw" firstAttribute="top" secondItem="K14-1k-APc" secondAttribute="bottom" constant="8" id="5EL-l6-iVA"/>
+                                    <constraint firstItem="QI5-eq-sEw" firstAttribute="leading" secondItem="Ygg-bZ-0Tr" secondAttribute="leading" id="JUa-5e-Htf"/>
+                                    <constraint firstItem="mHE-wZ-Ajv" firstAttribute="leading" secondItem="QI5-eq-sEw" secondAttribute="leading" id="PlV-ZP-zxb"/>
+                                    <constraint firstItem="Ygg-bZ-0Tr" firstAttribute="leading" secondItem="1xK-8t-GUs" secondAttribute="leading" constant="16" id="ZY3-rU-Ebg"/>
+                                    <constraint firstItem="K14-1k-APc" firstAttribute="leading" secondItem="Ygg-bZ-0Tr" secondAttribute="leading" id="aOq-xl-lgL"/>
+                                    <constraint firstItem="K14-1k-APc" firstAttribute="top" secondItem="Ygg-bZ-0Tr" secondAttribute="bottom" id="gpf-ZA-0AG"/>
+                                    <constraint firstItem="mHE-wZ-Ajv" firstAttribute="top" secondItem="QI5-eq-sEw" secondAttribute="bottom" constant="8" id="iI4-C2-Jzg"/>
+                                    <constraint firstItem="Ygg-bZ-0Tr" firstAttribute="top" secondItem="1xK-8t-GUs" secondAttribute="top" constant="16" id="sHa-l8-a3c"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidt">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xnJ-oS-WiV" secondAttribute="bottom" id="8Ko-Lx-mLh"/>
+                            <constraint firstItem="xnJ-oS-WiV" firstAttribute="top" secondItem="opW-sU-ATt" secondAttribute="top" id="8Od-1R-1qd"/>
+                            <constraint firstItem="xnJ-oS-WiV" firstAttribute="leading" secondItem="opW-sU-ATt" secondAttribute="leading" id="Lah-cb-DVx"/>
+                            <constraint firstAttribute="trailing" secondItem="1xK-8t-GUs" secondAttribute="trailing" id="WDU-s4-f4N"/>
+                            <constraint firstItem="1xK-8t-GUs" firstAttribute="top" secondItem="opW-sU-ATt" secondAttribute="top" constant="12" id="Wvv-f6-yUT"/>
+                            <constraint firstItem="1xK-8t-GUs" firstAttribute="leading" secondItem="xnJ-oS-WiV" secondAttribute="trailing" id="cG0-vk-jQO"/>
+                            <constraint firstAttribute="bottom" secondItem="1xK-8t-GUs" secondAttribute="bottom" constant="12" id="hpW-sa-ymH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="opW-sU-ATt" secondAttribute="bottom" constant="14" id="Cal-qh-hlS"/>
+                    <constraint firstItem="opW-sU-ATt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="e7V-aX-NeX"/>
+                    <constraint firstItem="opW-sU-ATt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="j1g-qR-uxj"/>
+                    <constraint firstAttribute="trailing" secondItem="opW-sU-ATt" secondAttribute="trailing" constant="16" id="orp-d3-i1o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgPet" destination="uUV-5u-ddM" id="wtb-Pt-bgP"/>
+                <outlet property="lblCatAge" destination="QI5-eq-sEw" id="Qmr-Ym-o6O"/>
+                <outlet property="lblCatDistance" destination="mHE-wZ-Ajv" id="fcZ-RQ-mls"/>
+                <outlet property="lblCatName" destination="Ygg-bZ-0Tr" id="GUd-5P-UMm"/>
+                <outlet property="lblCatType" destination="K14-1k-APc" id="sGZ-Pt-t11"/>
+                <outlet property="viewContent" destination="1xK-8t-GUs" id="uVE-pJ-BV7"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="162.05357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kitty" width="697" height="1000"/>
+    </resources>
+</document>
