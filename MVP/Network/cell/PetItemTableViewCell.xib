@@ -110,6 +110,7 @@
                             <constraint firstAttribute="bottom" secondItem="xnJ-oS-WiV" secondAttribute="bottom" id="8Ko-Lx-mLh"/>
                             <constraint firstItem="xnJ-oS-WiV" firstAttribute="top" secondItem="opW-sU-ATt" secondAttribute="top" id="8Od-1R-1qd"/>
                             <constraint firstItem="xnJ-oS-WiV" firstAttribute="leading" secondItem="opW-sU-ATt" secondAttribute="leading" id="Lah-cb-DVx"/>
+                            <constraint firstAttribute="height" constant="164" id="Rb5-pM-YFq"/>
                             <constraint firstAttribute="trailing" secondItem="1xK-8t-GUs" secondAttribute="trailing" id="WDU-s4-f4N"/>
                             <constraint firstItem="1xK-8t-GUs" firstAttribute="top" secondItem="opW-sU-ATt" secondAttribute="top" constant="12" id="Wvv-f6-yUT"/>
                             <constraint firstItem="1xK-8t-GUs" firstAttribute="leading" secondItem="xnJ-oS-WiV" secondAttribute="trailing" id="cG0-vk-jQO"/>

@@ -10,6 +10,8 @@
 		276108B42376C7A700308867 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276108B32376C7A700308867 /* ErrorResponse.swift */; };
 		276108B62376D23400308867 /* CatVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276108B52376D23400308867 /* CatVO.swift */; };
 		276108B82376D2B600308867 /* GetAllCatResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276108B72376D2B600308867 /* GetAllCatResponse.swift */; };
+		276108BB2376DC1600308867 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276108BA2376DC1600308867 /* BaseViewModel.swift */; };
+		276108BD2376DC2900308867 /* PetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276108BC2376DC2900308867 /* PetListViewModel.swift */; };
 		278ACFEC235875A6006D6D81 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278ACFEB235875A6006D6D81 /* Test.swift */; };
 		27CEEAD4234899040047F061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEAD3234899040047F061 /* AppDelegate.swift */; };
 		27CEEAD6234899040047F061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEAD5234899040047F061 /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 		276108B32376C7A700308867 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		276108B52376D23400308867 /* CatVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatVO.swift; sourceTree = "<group>"; };
 		276108B72376D2B600308867 /* GetAllCatResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCatResponse.swift; sourceTree = "<group>"; };
+		276108BA2376DC1600308867 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		276108BC2376DC2900308867 /* PetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewModel.swift; sourceTree = "<group>"; };
 		278ACFEB235875A6006D6D81 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		27CEEAD0234899040047F061 /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CEEAD3234899040047F061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		276108B92376DC0700308867 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				276108BA2376DC1600308867 /* BaseViewModel.swift */,
+				276108BC2376DC2900308867 /* PetListViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
 		27CEEAC7234899040047F061 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +138,7 @@
 		27CEEAD2234899040047F061 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				276108B92376DC0700308867 /* viewmodels */,
 				27CEEB1D2349EA6A0047F061 /* models */,
 				27CEEB132349E8D80047F061 /* vo */,
 				27CEEB0F2349E7780047F061 /* utils */,
@@ -412,10 +426,12 @@
 				27CEEB2F2349FFCF0047F061 /* RemoteModel.swift in Sources */,
 				27CEEB2D2349FF8A0047F061 /* BaseModel.swift in Sources */,
 				27CEEAF42348A37B0047F061 /* BaseView.swift in Sources */,
+				276108BB2376DC1600308867 /* BaseViewModel.swift in Sources */,
 				27CEEB31234A00720047F061 /* RemoteModelImpl.swift in Sources */,
 				27CEEB2B2349FEE40047F061 /* PetListPresenterImpl.swift in Sources */,
 				27CEEB1C2349EA090047F061 /* BaseVO.swift in Sources */,
 				27CEEAD4234899040047F061 /* AppDelegate.swift in Sources */,
+				276108BD2376DC2900308867 /* PetListViewModel.swift in Sources */,
 				27CEEB212349F2D10047F061 /* SharedConstants.swift in Sources */,
 				27CEEB182349E9660047F061 /* GetPetCategoryResponse.swift in Sources */,
 				27CEEAF62348A38F0047F061 /* LoginPresenterImpl.swift in Sources */,
